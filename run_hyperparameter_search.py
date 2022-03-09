@@ -38,7 +38,7 @@ val_data = boolq.BoolQDataset(val_df, tokenizer)
 test_data = boolq.BoolQDataset(test_df, tokenizer)
 
 args = TrainingArguments(
-    output_dir="/content",
+    output_dir="/scratch/ibd214",
     evaluation_strategy="epoch",
     per_device_train_batch_size=8,
     per_device_eval_batch_size=8,
